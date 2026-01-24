@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <title>madhur</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/94ce7be6bf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/name_logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Emryologist</p>
+          <h1>Hi, I'm <span>Madhur </span><br />From Lucknow</h1>
+        </div>
+      </div>
+    </div>
+    <!-----------ABOUT----------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/about-img.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Experienced Embryologist (2.6 Yr +) with comprehensive expertise
+              in advanced embryo culture techniques, ICSI/PICSI, IVF/IUI
+              procedures, embryo biopsy, and complete semen analysis. Passionate
+              about delivering high success rates through precision lab work,
+              personalized patient care, and adherence to best clinical
+              practices.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('certification')">
+                Certification
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Embryologist</span><br />ICSI/IVF/IUI procedures</li>
+                <li>
+                  <span>Center Manager</span><br />Operations & Financial
+                  Management and Patient counselling
+                </li>
+                <li>
+                  <span>Biotechnologist</span><br />Electrophoresis, Apoptosis
+                  analysis,PCR,Animal cell culture
+                </li>
+                <li>
+                  <span>Software Developer</span><br />MERN, JAVA, Java script,
+                  React, SQL, MongoDB, HTML, CSS, Tailwind, SpringBoot, GitHub,
+                  JAVA8, DSA, CI-CD
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Nov 25 - Current</span><br />Embryologist at ZIVIA IVF
+                  Lucknow
+                </li>
+                <li>
+                  <span>Apr 25 - Aug 25</span><br />Center Head at EVARA IVF
+                  Kanpur
+                </li>
+                <li>
+                  <span>Aug 18 - Jan 20</span><br />Embryologist /IVF Division
+                  Head at GCRG-IMS Lucknow
+                </li>
+                <li>
+                  <span>Aug 14 - Jan 22</span><br />H.O.D.-Biotechnology at GCRG
+                  Group of Institutions Lucknow
+                </li>
+                <li>
+                  <span>Feb 22 - April 25</span><br />Software Developer at
+                  XAPOTECH SYSTEMS Noida
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>M.Tech.</span><br />Biotechnology</li>
+                <li><span>M.Sc.</span><br />Bioinformatics</li>
+                <li><span>B.Sc.</span><br />Chemistry & Botany</li>
+                <li><span>PGDCA</span><br />Computer Applications</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="certification">
+              <ul>
+                <li>
+                  <span>Clinical Embryology</span><br />Fertilis Academy &
+                  Artemis Hospital Gurugram
+                </li>
+                <li><span>Animal cell culture</span><br />IITR Lucknow</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------SERVICES----------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-microscope"></i>
+            <h2>Embryologist</h2>
+            <p>
+              ICSI/IVF, Embryo Biopsy, Vitrification of Embryos & Gametes,
+              Warming of Embryos & Gametes, Assisted Hatching, Oocyte Screening
+              & Denudation, Embryo Assessment, Embryo Transfer
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-briefcase-medical"></i>
+            <h2>Center Head</h2>
+            <p>
+              Laboratory management (QA/QC), Operations & Financial Management
+              and Patient counselling.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Website Developer</h2>
+            <p>
+              Design and develop a product catalogue website, e-commerce
+              websites. Domain -Insurance Healthcare and Hospital management
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------Portfolio------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work1.png" />
+            <div class="layer">
+              <h3>ICSI/IVF</h3>
+              <p>
+                Expert in all advanced embryo culture techniques like ICSI/IVF,
+                IUI & Vitrification and Warming procedures with Avg. 90% Blast
+                formation rate.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work2.png" />
+            <div class="layer">
+              <h3>TE Biopsy</h3>
+              <p>
+                Trophectoderm biopsy using laser Assisted Hatching techniques
+                and direct laser assisted flickering method.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work3.png" />
+            <div class="layer">
+              <h3>Center Head</h3>
+              <p>
+                Visionary Head of IVF & Biotechnology Department, Operations &
+                Financial Management and Patient counselling.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work4.png" />
+            <div class="layer">
+              <h3>Software Developer</h3>
+              <p>
+                Design and develop a product catalogue website, e-commerce
+                websites with Excellent SEO & Google Add.
+              </p>
+              <a href="https://shivtourtravel.com/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-----------swiper------------->
+        <div class="container2">
+          <div class="swiper">
+            <h3>Glimpse of My Work</h3>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="content">
+                  <img src="images/blast6.png" alt="" />
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <img src="images/blast1.png" alt="" />
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <img src="images/blast2.png" alt="" />
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <img src="images/blast3.png" alt="" />
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <img src="images/blast4.png" alt="" />
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <img src="images/blast5.png" alt="" />
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <img src="images/blast7.png" alt="" />
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <img src="images/blast8.png" alt="" />
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <img src="images/blast9.png" alt="" />
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <img src="images/blast10.png" alt="" />
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <img src="images/blast11.png" alt="" />
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <img src="images/blast12.png" alt="" />
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <img src="images/blast13.png" alt="" />
+                  <div class="overlay"></div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <img src="images/blast14.png" alt="" />
+                  <div class="overlay"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-----------Contacts------------->
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>mmishra433@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>+917518632140</p>
+            <div class="social-icons">
+              <a href="http://linkedin.com/in/madhur-embryologist"
+                ><i class="fa-brands fa-square-linkedin"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/madhurmishra97?utm_source=qr&igsh=MXRqMmFlamh1NmgyZQ=="
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a
+                href="http://wa.me/+917518632140?text=Hi I'm Madhur, How can i help You?"
+                ><i class="fa-brands fa-square-whatsapp"></i
+              ></a>
+              <a href="tel:+917518632140"
+                ><i class="fa-solid fa-square-phone"></i
+              ></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="contact-form">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <input
+                type="text"
+                name="Contact"
+                placeholder="Your Contact"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <i class="fa-solid fa-copyright"></i>All right's reserve to Madhur
+        Mishra(Embryologist & Web Developer)
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper('.swiper', {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        speed: 8000,
+        freeMode: true,
+        autoplay: {
+          delay: 0,
+        },
+        breakpoints: {
+          550: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          950: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+    <script>
+      var tablinks = document.getElementsByClassName('tab-links');
+      var tabcontents = document.getElementsByClassName('tab-contents');
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove('active-links');
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-links');
+        document.getElementById(tabname).classList.add('active-tab');
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById('sidemenu');
+      function openmenu() {
+        sidemenu.style.right = '0';
+      }
+      function closemenu() {
+        sidemenu.style.right = '-200px';
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbzlHkHRLsXtRV9JSWGm_yKewCHHs9xeVeq_TSx8dKu32RoFXqq_WJ0STDsW_vZtCxAgXg/exec';
+      const form = document.forms['contact-form'];
+      const msg = document.getElementById('msg');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => response.json())
+          .then((response) => {
+            msg.innerHTML = 'Message sent successfully';
+            setTimeout(function () {
+              msg.innerHTML = '';
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+  </body>
+</html>
