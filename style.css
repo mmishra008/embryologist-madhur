@@ -339,6 +339,39 @@ nav .fa-solid{
   box-shadow: 0 8px 10px rgba(0,0,0,0.5), inset 0 2px 2px rgba(255, 255, 255, 0.2);
   cursor: grab;
 }
+.content{
+  position: relative;
+  display: grid;
+  grid-auto-flow: dense;
+  height: 100%;
+  padding: 10px;
+  background: rgba(104,104,104,0.5);
+  color: #fff;
+  user-select: none;
+}
+.content::before, .content::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(180deg,
+  rgb(30,119,95),
+  rgb(55,141,167),
+  rgb(93,59,174),
+  rgb(165,59,157)
+  );
+}
+.content img{
+    width: 100%;
+  pointer-events: none;
+  user-select: none;
+  aspect-ratio: 5/5;
+  border-radius:5px;
+  object-fit: cover;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  filter: grayscale(1);
+}
 .overlay{
   position: absolute;
   inset: 0;
@@ -443,4 +476,5 @@ nav ul .fa-solid{
   aspect-ratio: 4.7/5;
  }
 }
+
 
