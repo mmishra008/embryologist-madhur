@@ -26,6 +26,12 @@ nav{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  z-index: 2;
+  position: fixed;
+  background: #080808;
+  width: 80%;
+  margin-top: -10px;
+  border-radius: 10px;
 }
 .logo{
   width: 140px;
@@ -491,3 +497,4 @@ nav ul .fa-solid{
   aspect-ratio: 4.7/5;
  }
 }
+
