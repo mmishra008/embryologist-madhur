@@ -40,6 +40,9 @@ opacity: 0.5;
 .logo{
   width: 140px;
 }
+nav.sticky img{
+  opacity: 0.5;
+}
 nav ul li{
   display: inline-block;
   list-style: none;
@@ -501,5 +504,6 @@ nav ul .fa-solid{
   aspect-ratio: 4.7/5;
  }
 }
+
 
 
