@@ -419,7 +419,12 @@
         sidemenu.style.right = '-200px';
       }
     </script>
-
+ <script type="text/javascript">
+      window.addEventListener('scroll', function () {
+        var nav = document.querySelector('nav');
+        nav.classList.toggle('sticky', window.scrollY > 0);
+      });
+    </script>
     <script>
       const scriptURL =
         'https://script.google.com/macros/s/AKfycbzlHkHRLsXtRV9JSWGm_yKewCHHs9xeVeq_TSx8dKu32RoFXqq_WJ0STDsW_vZtCxAgXg/exec';
@@ -442,3 +447,4 @@
     </script>
   </body>
 </html>
+
