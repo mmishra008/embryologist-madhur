@@ -33,6 +33,10 @@ nav{
   margin-top: -10px;
   border-radius: 10px;
 }
+nav.sticky ul li a{
+color: #fff;
+opacity: 0.5;
+}
 .logo{
   width: 140px;
 }
@@ -497,4 +501,5 @@ nav ul .fa-solid{
   aspect-ratio: 4.7/5;
  }
 }
+
 
